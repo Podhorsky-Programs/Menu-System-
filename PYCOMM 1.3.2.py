@@ -1,6 +1,6 @@
 #!/user/bin/env python3
 # ----------------------------------------------------------------------------------------------------------
-# script: PYCOMM V 1.3.1.py
+# script: PYCOMM V 1.3.2.py
 # first created: 2/7/2025
 # last updated: 5/15/2025
 # created by: Blake podhorksy 
@@ -25,6 +25,7 @@
 #              5/14/2025 creation of PYCOMM 1.3.1- added word game, menu updates and documentation updates
 #              5/15/2025 significant bug fixes and quality improvments to 1.3.1's additons
 #              5/16/2025 minor adjustments to 1.3.1's additons to improve quality
+#              11/12/2025 PYCOMM 1.3.2- Removed unecessary code, minor bug fixes with password functionality
 # ------------------------------------------------------------------------------------------------------------
 
 #imports
@@ -373,3 +374,4 @@ mainline_pw()
 # welcome to the rattle (end of program)
 
 # ----------------------------------------------------------------------------------------------------------
+
