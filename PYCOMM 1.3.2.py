@@ -2,7 +2,7 @@
 # ----------------------------------------------------------------------------------------------------------
 # script: PYCOMM V 1.3.2.py
 # first created: 2/7/2025
-# last updated: 5/15/2025
+# last updated: 11/14/2025
 # created by: Blake podhorksy 
 # created in: Microsoft Visual Studio
 # found at: Blakepodhorsky@gmail.com 
@@ -79,7 +79,7 @@ def wrd_lst_choice():
     # this function asks the user what type of words they would like for the word game
     # it then presents them with a random word from either a 3 word list or a 5 word list
     choice = str(input("What words would you like(3 or 5): "))
-    words_3 = ["dog", "cat", "car", "lab", "pet", "vet", "war", "the", "pop", "sea"]
+    words_3 = ["dog", "cat", "car", "lab", "pet", "vet", "war", "the", "pop", "sea", "eat", "pup", "men"]
     words_5 = ["point", "pichu", "mario", "sword", "cloud", "great", "theme", "loops", "menus", "keeps"]
     if choice == "3":
         secret_word = random.choice(words_3)
@@ -94,7 +94,7 @@ def word_game():
      # this fucntion creates a word game for the user similar to hangman
      # the goal is to guess the word in 10 tries, if they do the win, otherwsie they lose
      #  this also uses functions update_dashes and get_guess
-        words_3 = ["dog", "cat", "car", "lab", "pet", "vet", "war", "the", "pop", "sea"]
+        words_3 = ["dog", "cat", "car", "lab", "pet", "vet", "war", "the", "pop", "sea", "eat", "pup", "men"]
         words_5 = ["point", "pichu", "mario", "sword", "cloud", "great", "theme", "loops", "menus", "keeps"]
         word_lst = ([words_3, words_5])
         secret_word = wrd_lst_choice()
@@ -144,7 +144,7 @@ def quiz():
     q3 = """3. what does SQL stand for?
     (a) structured querry language
     (b) secret quiz lesson
-    (c) skibbidy question looping
+    (c) someting quiet lurks
     """
     print(q1)
     # a_q1 stands for awnser to question 1, same for a_q2 and a_q3
@@ -374,4 +374,5 @@ mainline_pw()
 # welcome to the rattle (end of program)
 
 # ----------------------------------------------------------------------------------------------------------
+
 
