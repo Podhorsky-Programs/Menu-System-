@@ -21,11 +21,13 @@
 #              2/19/2025 creation of PYCOMM 1.1- added quiz game, quality improvments and bug fixes
 #              2/19/2025 creation of PYCOMM 1.2- added mainline loop and bug fixes
 #              3/3/2025 creation of PYCOMM 1.2.1- added documentation to program, menu commands now functions
-#              4/7/2025 PYCOMM 1.3- added more documentation and added Game Of Pig, bug fixes
+#              4/7/2025 creation of PYCOMM 1.3- added more documentation and added Game Of Pig, bug fixes
 #              5/14/2025 creation of PYCOMM 1.3.1- added word game, menu updates and documentation updates
 #              5/15/2025 significant bug fixes and quality improvments to 1.3.1's additons
 #              5/16/2025 minor adjustments to 1.3.1's additons to improve quality
 #              11/12/2025 PYCOMM 1.3.2- Removed unecessary code, minor bug fixes with password functionality
+#              11/12/2025 added Read.ME,transferd PYCOMM to Github
+#              11/14/2025 1.3.2 additons to word game, slight change to documentation. Updated Read.ME
 # ------------------------------------------------------------------------------------------------------------
 
 #imports
@@ -374,5 +376,6 @@ mainline_pw()
 # welcome to the rattle (end of program)
 
 # ----------------------------------------------------------------------------------------------------------
+
 
 
