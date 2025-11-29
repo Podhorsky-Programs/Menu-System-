@@ -1,10 +1,10 @@
 #!/user/bin/env python3
 # ----------------------------------------------------------------------------------------------------------
-# script: PYCOMM V 1.3.2.py
+# script: PYCOMM V 1.3.3.py
 # first created: 2/7/2025
-# last updated: 11/14/2025
+# last updated: 11/29/2025
 # created by: Blake podhorksy 
-# created in: Microsoft Visual Studio
+# created in: Microsoft Visual Studio/Github
 # found at: Blakepodhorsky@gmail.com 
 # ----------------------------------------------------------------------------------------------------------
 
@@ -28,6 +28,7 @@
 #              11/12/2025 PYCOMM 1.3.2- Removed unecessary code, minor bug fixes with password functionality
 #              11/12/2025 added Read.ME,transferd PYCOMM to Github
 #              11/14/2025 1.3.2 additons to word game, slight change to documentation. Updated Read.ME
+#              11/29/2015 PYCOMM 1.3.3- Added PC part selector, updated menu(option A), updated functions
 # ------------------------------------------------------------------------------------------------------------
 
 #imports
@@ -46,7 +47,8 @@ def menu():
     #this function gives the user a list that 
     #falls into place during the mainline program
     #it presents the user with various options
-    print("please select from the following options:")
+    print("please select from the following options:")\
+    print("A - PC part selection")
     print("B - print welcome banner")
     print("M - display menu")
     print("Q - take a short quiz")
@@ -54,6 +56,22 @@ def menu():
     print("P - Play Game Of Pig Game")
     print("G - play guess the word")
     print("X - Exit the program")
+
+def pc_prt_select():
+    # this function takes user imputs to create an optimal PC based of use and budget
+    # this is modeled after a previous project i made, however it adds RAM and a CPU and a motherboard
+    budget = num(input("Whats your budget: "))
+    pc_use = str(input("What is the PC for(gaming- streaming- editing): "))
+    gpu = str("")
+    cpu = str("")
+    ram = str("")
+    mthr_brd = str("")
+    if pc_Use == "Gaming" or pc_Use == "gaming" and budget >= 5000:
+        gpu = "ROG Astral GeForce RTX 5090 OC edition"
+        cpu = "AMD RYZEN 7 9800X3D"
+        ram = "Kingston Fury beast DDR5 64GB 6400MT/s"
+        mthr_brd = "TUF gaming B850- Plus WIFI AMD AM5 ATX"
+    elif pc_Use == "Gaming" or pc_Use == "gaming" and budget >= :
 
 def get_guess():
     # this function gets a users guess for the word game
@@ -200,7 +218,7 @@ def banner():
 
 def version():
     # this fucntion prints our verison number
-    version_num = "1.3.1"
+    version_num = "1.3.3"
     print("                      " + version_num)
        
 def Game_Of_Pig():
@@ -330,8 +348,9 @@ def mainline_pw():
             while guess == correct_pass:# while True starts an infinite loop, this will continue as long as option X is not selected
                 menu()
                 your_choice = input("Option choice: ")
-
-                if your_choice == "B" or your_choice == "b":
+                if your_choice == "A" or your_choice == "a":
+                    pc_prt_select()
+                elif your_choice == "B" or your_choice == "b":
                     banner()
                 elif your_choice=="M" or your_choice=="m":
                     menu()
@@ -376,6 +395,7 @@ mainline_pw()
 # welcome to the rattle (end of program)
 
 # ----------------------------------------------------------------------------------------------------------
+
 
 
 
