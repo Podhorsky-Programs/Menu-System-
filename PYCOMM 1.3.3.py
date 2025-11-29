@@ -60,18 +60,33 @@ def menu():
 def pc_prt_select():
     # this function takes user imputs to create an optimal PC based of use and budget
     # this is modeled after a previous project i made, however it adds RAM and a CPU and a motherboard
-    budget = num(input("Whats your budget: "))
+    budget = num(input("Whats your budget(5000, 3500, 2500, 1500): "))
     pc_use = str(input("What is the PC for(gaming- streaming- editing): "))
+    your_pc == str("Your PC parts include a " + gpu + ", a " + cpu + ", a " ram + " and a "  + mthr_brd)
     gpu = str("")
     cpu = str("")
     ram = str("")
     mthr_brd = str("")
-    if pc_Use == "Gaming" or pc_Use == "gaming" and budget >= 5000:
-        gpu = "ROG Astral GeForce RTX 5090 OC edition"
-        cpu = "AMD RYZEN 7 9800X3D"
-        ram = "Kingston Fury beast DDR5 64GB 6400MT/s"
-        mthr_brd = "TUF gaming B850- Plus WIFI AMD AM5 ATX"
-    elif pc_Use == "Gaming" or pc_Use == "gaming" and budget >= :
+    if pc_use == "Gaming" or pc_Use == "gaming":
+        if budget == 5000:
+             gpu = "ROG Astral GeForce RTX 5090 OC edition"
+             cpu = "AMD RYZEN 7 9800X3D"
+             ram = "Kingston Fury beast DDR5 64GB 6400MT/s"
+             mthr_brd = "TUF gaming B850- Plus WIFI AMD AM5 ATX"
+             print(your_pc)
+        elif budget == 3500:
+             gpu = "AMD Radeon RX 7900 XT phantom OC"
+             cpu = "AMD RYZEN 7 9800X3D"
+             ram = "Kingston Fury beast DDR5 64GB 6400MT/s"
+             mthr_brd = "TUF gaming B850- Plus WIFI AMD AM5 ATX"
+             print(your_pc)
+        elif budget == 2500:
+            gpu =
+            cpu =
+            ram =
+            mthr_brd =
+            print(your_pc)
+        elif budget == 1500:
 
 def get_guess():
     # this function gets a users guess for the word game
@@ -395,6 +410,7 @@ mainline_pw()
 # welcome to the rattle (end of program)
 
 # ----------------------------------------------------------------------------------------------------------
+
 
 
 
