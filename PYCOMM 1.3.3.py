@@ -74,13 +74,13 @@ def pc_prt_select():
         if budget == 5000:
              gpu = "ROG Astral GeForce RTX 5090 OC edition"
              cpu = "AMD RYZEN 7 7700X"
-             ram = "Kingston Fury beast DDR5 64GB 6400MT/s"
+             ram = "Kingston Fury beast DDR5 64GB 6400 MHz"
              mthr_brd = "ASUS ROG Strix X870E-E Gaming Wifi"
              print(your_pc)
         elif budget == 3500:
              gpu = "AMD Radeon RX 7900 XT phantom OC"
              cpu = "AMD RYZEN 7 9800X3D"
-             ram = "Kingston Fury beast DDR5 64GB 6400MTz"
+             ram = "Kingston Fury beast DDR5 64GB 6400 MHz"
              mthr_brd = "TUF gaming B850- Plus WIFI AMD AM5 ATX"
              print(your_pc)
         elif budget == 2500:
@@ -90,6 +90,11 @@ def pc_prt_select():
             mthr_brd = "ASUS ROG Strix X870E-E Gaming Wifi"
             print(your_pc)
         elif budget == 1500:
+            gpu = ""
+            cpu = ""
+            ram = ""
+            mthr_brd = ""
+            print(your_pc)
 
 def get_guess():
     # this function gets a users guess for the word game
@@ -413,6 +418,7 @@ mainline_pw()
 # welcome to the rattle (end of program)
 
 # ----------------------------------------------------------------------------------------------------------
+
 
 
 
