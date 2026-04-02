@@ -1,7 +1,7 @@
 
 .#!/user/bin/env python3
 # ----------------------------------------------------------------------------------------------------------
-# script: PYCOMM V 1.3.3.py
+# script: PYCOMM V 1.4.0.py
 # first created: 2/7/2025
 # last updated: 11/29/2025
 # created by: Blake podhorksy 
